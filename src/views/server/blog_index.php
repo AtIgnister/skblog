@@ -12,6 +12,6 @@
         $postMeta = Blog_renderer::get_post_meta($post);
 
         $postName = rtrim($post, ".md");
-        echo "<a href='$blog_dir/$postName'>". $postMeta["name"] ."</a>";
+        echo "<a href='$blog_dir/$postName'>". $postMeta["name"] ."</a><br>";
     }
 ?>
