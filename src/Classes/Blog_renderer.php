@@ -15,14 +15,14 @@ class Blog_renderer {
         if(file_exists($post_path)) {
             self::render_post($path);
         } else {
-            require_once(PAGE_404);
+            Views::require_view("server/404.php");
         }
     }
 
     public static function render_post($path) {
 
         if(!isset($path[1])) {
-            require_once(PAGE_404);
+            Views::require_view("server/404.php");
         }
 
         $post = $path[2];

@@ -43,6 +43,21 @@ class Views {
             return;
         }
 
-        require_once("$view_path/server/404.php");
+        if(file_exists("$theme_dir/$theme/server/404.php")) {
+            require_once("$theme_dir/$theme/server/404.php");
+            return;
+        }
+
+        if(file_exists("$view_path/server/404.php")) {
+            require_once("$view_path/server/404.php");
+            return;
+        }
+
+        echo "
+            <h1>Could not locate view file.</h1>
+            <p>Something has gone very, very wrong.</p>
+            <p>Contact the server admin.</p>
+            <p>Unless you are the server admin, in which case you should probably figure out how to fix this.</p>
+        ";
     }
 }
