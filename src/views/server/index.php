@@ -1,1 +1,1 @@
-This isn't!
+This is your blogs homepage. Go nuts!
