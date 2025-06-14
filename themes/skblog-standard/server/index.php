@@ -17,7 +17,7 @@
             </h1>
         </a>
         <nav>
-            <p><a href="/">Home</a> <a href="/blog/">Blog</a> <a href="https://kami.bearblog.dev/about-me-june-10th-2025/">About Me</a></p>
+            <p><a href="/">Home</a> <a href="/blog/">Blog</a></p>
         </nav>
     </header>
     <main>
