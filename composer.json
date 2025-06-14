@@ -1,0 +1,13 @@
+{
+    "name": "kami/skblog",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Kami\\Skblog\\": "src/"
+        }
+    },
+    "require": {
+        "league/commonmark": "^2.7",
+        "symfony/yaml": "^7.3"
+    }
+}
